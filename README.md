@@ -12,7 +12,7 @@ gem 'kp_geohash'
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
 Or install it yourself as:
@@ -33,7 +33,7 @@ KpGeohash::Encode.new(latitude, longitude, percision).build.geohash # => gbsuv7z
 ```ruby
 geohash = 'gbsuv7ztq'
 
-geohash_decode = KpGeohash::Decode.new(geohash).build.geohash
+geohash_decode = KpGeohash::Decode.new(geohash).build
 geohash_decode.lat
 geohash_decode.lon
 ```
