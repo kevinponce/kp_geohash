@@ -1,0 +1,53 @@
+AllCops:
+  Exclude:
+    - 'kp_geohash.gemspec'
+    - 'tmp/**/*'
+    - 'bin/*'
+    - 'Guardfile'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'Rakefile'
+    - '.*'
+    - 'log/*'
+  TargetRubyVersion: 2.3.0
+
+Rails:
+  Enabled: true
+
+Style/Encoding:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: when_needed
+
+Style/Encoding:
+  EnforcedStyle: when_needed
+
+Metrics/LineLength:
+  Max: 250
+
+Metrics/MethodLength:
+  Max: 100
+
+Style/AlignHash:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/CyclomaticComplexity:
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 150
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
